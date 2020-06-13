@@ -9,7 +9,6 @@ def load_library(thing = THING)
   library.each do |key, value|
     library[key] = {:english => value[0], :japanese => value[1]}
   end
-binding.pry
 return library
 
 end
