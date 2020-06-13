@@ -4,6 +4,7 @@ THING = YAML.load_file('lib/emoticons.yml')
 
 def load_library(thing = THING)
   # code goes here
+  library = thing
 end
 
 def get_japanese_emoticon(thing = THING)
