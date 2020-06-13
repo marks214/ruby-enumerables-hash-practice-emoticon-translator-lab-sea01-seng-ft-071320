@@ -5,6 +5,12 @@ THING = YAML.load_file('./lib/emoticons.yml')
 
 def load_library(thing = THING)
   library = THING
+  dictionary = library.each_with_object({}) do |(key, value), final_hash|
+    value.each do |convert|
+      if !final_hash[convert]
+        final_hash[convert] = {}
+      end
+      final_hash[convert].push(value)
 
   return library
 end
