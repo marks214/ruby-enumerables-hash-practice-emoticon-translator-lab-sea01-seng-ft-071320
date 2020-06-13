@@ -15,7 +15,7 @@ def load_library(thing = THING)
 puts dictionary
 puts final_hash
 
-#  return final_hash
+return library
 
 end
 
