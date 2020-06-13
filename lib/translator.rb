@@ -12,7 +12,7 @@ def load_library(thing = THING)
       final_hash[append] = value
     end
   end
-puts "dictionary #{dictionary}"
+#puts "dictionary #{dictionary}"
 puts "final_hash #{final_hash}"
 
 return library
