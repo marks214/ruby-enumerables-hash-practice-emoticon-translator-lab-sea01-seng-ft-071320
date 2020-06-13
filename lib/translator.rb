@@ -1,9 +1,7 @@
-# require modules here
-require 'pry'
 require 'yaml'
 THING = YAML.load_file('./lib/emoticons.yml')
 
-def load_library(thing = THING)
+def load_library(YAML.load_file('./lib/emoticons.yml'))
   library = THING
   dictionary = library.each_with_object({}) do |(key, value), final_hash|
     value.each do |convert|
