@@ -12,6 +12,7 @@ def load_library(thing = THING)
       end
       final_hash[convert].push(value)
     end
+  end
 puts dictionary
 puts final_hash
 
