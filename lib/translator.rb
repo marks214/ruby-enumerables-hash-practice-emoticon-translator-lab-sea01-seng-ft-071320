@@ -6,7 +6,7 @@ def load_library(thing = THING)
   library = THING
   library.each do |key, value|
     library[key] = {:english => value[0], :japanese => value[1]}
-
+binding.pry
   end
 
 return library
