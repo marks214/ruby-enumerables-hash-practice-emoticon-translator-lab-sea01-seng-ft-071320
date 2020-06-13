@@ -11,8 +11,12 @@ def load_library(thing = THING)
         final_hash[convert] = {}
       end
       final_hash[convert].push(value)
+    end
+puts dictionary
+puts final_hash
 
-  return library
+  return final_hash
+
 end
 
 def get_japanese_emoticon(emotion)
