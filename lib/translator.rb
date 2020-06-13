@@ -4,17 +4,8 @@ THING = YAML.load_file('./lib/emoticons.yml')
 
 def load_library(thing = THING)
   library = THING
-  dictionary = library.each_with_object({}) do |(key, value), final_hash|
-    value.each do |append|
-      if !final_hash[append]
-        final_hash[append] = {}
-      end
-      final_hash[append] = value
-      puts "final_hash #{final_hash}"
-    end
-  end
-#puts "dictionary #{dictionary}"
-puts "final_hash #{final_hash}"
+
+puts "dictionary #{dictionary}"
 
 return library
 
