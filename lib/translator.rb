@@ -9,7 +9,8 @@ def load_library(thing = THING)
       if !final_hash[append]
         final_hash[append] = {}
       end
-      final_hash[append] = [value]
+      final_hash[append] = value
+      puts "final_hash #{final_hash}"
     end
   end
 #puts "dictionary #{dictionary}"
