@@ -4,6 +4,11 @@ THING = YAML.load_file('./lib/emoticons.yml')
 
 def load_library(thing = THING)
   library = THING
+  library.each do |key, value|
+     {:english => value[0], :japanese => value[1]}= library[key] 
+
+  end
+
 return library
 
 end
