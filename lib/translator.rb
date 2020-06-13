@@ -5,7 +5,7 @@ THING = YAML.load_file('./lib/emoticons.yml')
 
 def load_library(thing = THING)
   library = THING
-  binding.pry
+
   return library
 end
 
